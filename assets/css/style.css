@@ -69,14 +69,13 @@ a {
     align-items: center;
     justify-content: space-between;
 }
-
-.header .nav-bar {
+.nav-bar {
     display: flex;
-    position: relative;
     align-items: center;
 }
 
 .nav-bar a {
+    position: relative;
     padding: 10px 21px;
     color: #5f5b53;
     font-family: Sen;
@@ -85,25 +84,20 @@ a {
     font-weight: 400;
 }
 
-.nav-bar .home {
-    font-weight: 400;
-    color: #171100;
-}
 
-.header .nav-bar a:hover,
-.header .home
-{
+
+.nav-bar a:hover,
+.nav-bar .active {
     color: #171100;
     cursor: pointer;
     text-shadow: 1px 0 0 currentColor;
 }
 
-
-
-.header .home::after {
+.nav-bar .active::after {
     content: "";
     display: block;
     bottom: 6px;
+    left: 22.5px;
     position: absolute;
     width: 12px;
     height: 2px;

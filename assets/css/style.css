@@ -8,7 +8,113 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
+}
+
+:root {
+    --primary-color: #ffb900;
+    --font-heading: Sen, sans-serif;
 }
 
 /* Common- triển khai những cái chung */
+.content {
+    width: 1170px;
+    max-width: calc(100% -40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    width: 14.4rem;
+    height: 5rem;
+    border-radius: 2.45rem;
+    background: #171100;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Header */
+.header {
+    padding-top: 36px;
+    background-color: #fffcf4;
+}
+
+.header .logo {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem; /* 141.667% */
+}
+
+.header .logo span {
+    color: var(--primary-color);
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .nav-bar {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.nav-bar a {
+    padding: 10px 21px;
+    color: #5f5b53;
+    font-family: Sen;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nav-bar .home {
+    font-weight: 400;
+    color: #171100;
+}
+
+.header .nav-bar a:hover,
+.header .home
+{
+    color: #171100;
+    cursor: pointer;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+
+
+.header .home::after {
+    content: "";
+    display: block;
+    bottom: 6px;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 1px;
+}
+
+.header .btn {
+    margin-left: 70px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}

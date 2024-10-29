@@ -8,12 +8,12 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
     --primary-color: #ffb900;
-    --font-heading: Sen, sans-serif;
+    --font-heading: "Sen", sans-serif;
 }
 
 /* Common- triển khai những cái chung */
@@ -30,10 +30,16 @@ a {
 }
 
 .btn {
-    width: 14.4rem;
-    height: 5rem;
-    border-radius: 2.45rem;
+    font-family: "Poppins";
+    min-width: 118px;
+    line-height: 5rem;
     background: #171100;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    border-radius: 999px;
 }
 
 .btn:hover {
@@ -47,6 +53,12 @@ a {
     padding-top: 36px;
     padding-bottom: 8px;
     background-color: #fffcf4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
 }
 
 .header .logo {
@@ -103,10 +115,7 @@ a {
 
 .header .btn {
     margin-left: 49px;
-    color: #fff;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600;
+    min-width: 144px;
 }
 
 /* Hero */
@@ -123,6 +132,7 @@ a {
 
 .hero .images {
     position: relative;
+    width: 48%;
 }
 
 .hero .img-main {
@@ -130,6 +140,8 @@ a {
     width: 47rem;
     height: 68.5rem;
     border-radius: 2rem;
+    /* do tinh chat cua inline thua vai` px de hien thi chu co chan */
+    vertical-align: bottom;
 }
 
 .hero .card {
@@ -137,7 +149,6 @@ a {
     left: 300px;
     position: absolute;
     width: 27rem;
-    height: 24.4rem;
     flex-shrink: 0;
     border-radius: 1.2rem;
     background: #fff;
@@ -145,9 +156,8 @@ a {
 }
 
 .hero .card .item {
-    margin: 24px 0 7px 24px;
+    margin: 24px 0 24px 24px;
     display: flex;
-    align-items: center;
     gap: 16px;
 }
 
@@ -155,6 +165,7 @@ a {
     color: #5f5b53;
     font-size: 1.4rem;
     font-weight: 400;
+    padding: 5px 0;
 }
 
 .hero .card span {
@@ -164,8 +175,10 @@ a {
 }
 
 .hero .info {
+    width: 52%;
     max-width: 49rem;
-    padding-top: 64px;
+    padding-top: 58px;
+    padding-left: 20px;
 }
 
 .hero .title {
@@ -193,18 +206,19 @@ a {
 }
 
 .button-wrap .btn {
-    border-radius: 3.2rem;
     background: #ffb900;
     width: 18rem;
-    height: 6.4rem;
-    color: #fff;
-    text-align: center;
+    line-height: 6.2rem;
     font-size: 1.8rem;
-    font-weight: 600;
-    border: #ffb900;
+    border: none;
+}
+
+.button-wrap .btn:hover {
+    cursor: pointer;
 }
 
 .button-wrap .icon-play {
+    border: none;
     margin: 0 14px 0 28px;
     display: flex;
     align-items: center;
@@ -213,6 +227,7 @@ a {
     height: 40px;
     border-radius: 50%;
     background: #ffffff;
+    cursor: pointer;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
 }
 
@@ -220,6 +235,7 @@ a {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .info .stats {
@@ -228,7 +244,7 @@ a {
     gap: 28px;
 }
 
-.stats span {
+.stats strong {
     color: #171100;
     font-family: var(--font-heading);
     font-size: 4.4rem;

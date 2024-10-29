@@ -12,31 +12,109 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
+        <!-- Header -->
+        <!-- thêm fixed để neo header -->
+        <header class="header fixed">
+            <div class="content">
+                <div class="nav">
+                    <!-- logo -->
+                    <a href="/"
+                        ><img src="./assets/img/logo.svg" alt="Lesson."
+                    /></a>
+                    <div class="menu">
+                        <div class="nav-bar">
+                            <a href="#" class="active">Home</a>
+                            <a href="#">Courses</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Reviews</a>
+                        </div>
+                        <button class="btn">
+                            <a href="" class="sign-up">Sign Up</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
         <main style="height: 5000px">
-            <!-- Header -->
-            <!-- thêm fixed để neo header -->
-            <header class="header fixed">
+            <!-- Hero -->
+            <div class="hero-wrap">
                 <div class="content">
-                    <div class="nav">
-                        <!-- logo -->
-                        <a href="/"
-                            ><img src="./assets/img/logo.svg" alt="Lesson."
-                        /></a>
-                        <div class="menu">
-                            <div class="nav-bar">
-                                <a href="#" class="active">Home</a>
-                                <a href="#">Courses</a>
-                                <a href="#">Pricing</a>
-                                <a href="#">Reviews</a>
+                    <div class="hero">
+                        <!-- Image main hero -->
+                        <div class="images">
+                            <img
+                                src="./assets/img/hero_img.jpg"
+                                class="img-main"
+                                alt="Learn without limits and spread knowledge."
+                            />
+                            <!-- Card hero -->
+                            <div class="card">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/design-icon.svg"
+                                        alt="design-icon"
+                                    />
+                                    <div>
+                                        <p>20 Courses</p>
+                                        <span>UI/UX Design</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/dev-icon.svg"
+                                        alt="design-icon"
+                                    />
+                                    <div>
+                                        <p>20 Courses</p>
+                                        <span>Development</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/marketing-icon.svg"
+                                        alt="design-icon"
+                                    />
+                                    <div>
+                                        <p>30 Courses</p>
+                                        <span>Marketing</span>
+                                    </div>
+                                </div>
                             </div>
-                            <button class="btn">
-                                <a href="" class="sign-up">Sign Up</a>
-                            </button>
+                        </div>
+                        <div class="info">
+                            <!-- Main title -->
+                            <h1 class="title">
+                                Learn without limits and spread knowledge.
+                            </h1>
+                            <!-- sub-title -->
+                            <p class="sub-title">
+                                Build new skills for that “this is my year”
+                                feeling with courses, certificates, and degrees
+                                from world-class universities and companies.
+                            </p>
+                            <!-- Button and watch video -->
+                            <div class="button-wrap">
+                                <button class="btn">
+                                    <a href="#">See Courses</a>
+                                </button>
+                                <div class="icon-play">
+                                    <img
+                                        src="./assets/img/play.svg"
+                                        alt="watch video"
+                                        class="icon"
+                                    />
+                                </div>
+                                <span class="desc">Watch Video</span>
+                            </div>
+                            <p class="sub-title">Recent engagement</p>
+                            <div class="sub-title stats">
+                                <p><span>50K</span> Students</p>
+                                <p><span>70+</span> Courses</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </header>
-            <!-- Hero -->
+            </div>
         </main>
     </body>
 </html>

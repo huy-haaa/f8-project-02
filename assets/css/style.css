@@ -250,3 +250,57 @@ a {
     font-size: 4.4rem;
     font-weight: 600;
 }
+
+/* Popular */
+.popular {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.popular .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .title {
+    margin-bottom: 16px;
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: -0.076rem;
+}
+
+.popular .sub-title {
+    max-width: 458px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem; /* 166.667% */
+}
+
+.controls {
+    display: flex;
+    gap: 18px;
+}
+
+.controls .active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+
+}
+
+.controls .active:hover {
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
